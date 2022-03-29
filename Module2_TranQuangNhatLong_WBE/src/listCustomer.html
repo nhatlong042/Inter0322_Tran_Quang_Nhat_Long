@@ -1,0 +1,126 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>List Customer</title>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="myCss.css">
+</head>
+<body>
+<h2>List Customer</h2>
+<form class="d-flex" style="float: right">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+</form>
+<table class="table table-bordered">
+    <thead>
+    <tr class="table-primary">
+        <th scope="col">ID Customer</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">Date Of Birth</th>
+        <th scope="col">Gender</th>
+        <th scope="col">ID Card</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Address</th>
+        <th scope="col">Type Customer</th>
+        <th scope="col">Function</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td>Long</td>
+        <td>04/04/2000</td>
+        <td>Male</td>
+        <td>191910553</td>
+        <td>08135475094</td>
+        <td>tqnhatlong@gmail.com</td>
+        <td>254 Nguyen Van Linh</td>
+        <td>Diamond</td>
+        <td>
+            <form class="d-flex">
+                <button class="btn btn-outline-info" type="button" onclick="add()">Add</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Edit</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Delete</button>
+            </form>
+
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>Vy</td>
+        <td>04/07/2001</td>
+        <td>Female</td>
+        <td>100015559</td>
+        <td>0937044022</td>
+        <td>trannguyentuongvy@gmail.com</td>
+        <td>254 Nguyen Van Linh</td>
+        <td>Platinum</td>
+        <td>
+            <form class="d-flex">
+                <button class="btn btn-outline-info" type="button" onclick="add()">Add</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Edit</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Delete</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>Dung</td>
+        <td>11/12/1998</td>
+        <td>Male</td>
+        <td>11115253</td>
+        <td>09163479063</td>
+        <td>dung@gmail.com</td>
+        <td>254 Tran Cao Van</td>
+        <td>Gold</td>
+        <td>
+            <form class="d-flex">
+                <button class="btn btn-outline-info" type="button" onclick="add()">Add</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Edit</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Delete</button>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <th scope="row">4</th>
+        <td>Tuan</td>
+        <td>03/12/2000</td>
+        <td>Male</td>
+        <td>151517229</td>
+        <td>0815045376</td>
+        <td>quoctuan@gmail.com</td>
+        <td>137 Quang Trung</td>
+        <td>Silver</td>
+        <td>
+            <form class="d-flex">
+                <button class="btn btn-outline-info" type="button" onclick="add()">Add</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Edit</button>
+                <button class="btn btn-outline-info" type="button" onclick="">Delete</button>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+    </ul>
+</nav>
+<script>
+    function add(){
+        location.assign("addCustomer.html");
+    }
+</script>
+</body>
+</html>
